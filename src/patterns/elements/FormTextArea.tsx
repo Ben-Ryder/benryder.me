@@ -1,11 +1,15 @@
-import React from "react";
+import React, {ComponentProps} from "react";
 import { Field } from 'formik';
 import classNames from "classnames";
-import PropTypes from "prop-types";
 
-import FormError from "./FormError";
+import {FormError} from "./FormError";
 
-const FormTextArea = (props) => {
+export interface FormTextAreaProps extends ComponentProps<'textarea'> {
+    label: string,
+    error?: any
+}
+
+export function FormTextArea(props: FormTextAreaProps) {
   return (
     <>
       {props.label && props.id &&
@@ -31,12 +35,3 @@ const FormTextArea = (props) => {
     </>
   )
 }
-
-FormTextArea.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  error: PropTypes.any
-}
-
-export default FormTextArea;

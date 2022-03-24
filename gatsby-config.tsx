@@ -1,9 +1,9 @@
-// Load environment variables
-require("dotenv").config({
+import dotenv from "dotenv";
+dotenv.config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 
-module.exports = {
+export default {
   siteMetadata: {
     title: "Ben Ryder",
     titleTemplate: "%s | Ben Ryder",
