@@ -2,10 +2,10 @@ import React from "react";
 import {graphql} from "gatsby";
 import PropTypes from "prop-types";
 
-import PageLayout from "../layouts/PageLayout";
-import PageMetadata from "../components/PageMetadata";
-import Teaser from "../components/Teaser";
-import TagFilterList from "../components/TagFilterList";
+import PageLayout from "../patterns/layouts/PageLayout";
+import PageMetadata from "../patterns/components/PageMetadata";
+import Teaser from "../patterns/components/Teaser";
+import TagFilterList from "../patterns/components/TagFilterList";
 
 const ProjectsPage = ({data}) => {
   return (

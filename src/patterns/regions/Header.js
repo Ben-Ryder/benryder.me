@@ -7,7 +7,7 @@ import LinkComponent from "../elements/LinkComponent";
 
 // Assets
 import { Menu as MenuIcon, X as MenuCloseIcon } from "lucide-react";
-import NoJavascriptBanner from "../NoJavascriptBanner";
+import NoJavascriptBanner from "../components/NoJavascriptBanner";
 
 const Header = () => {
   const mainMenuLinks = useStaticQuery(graphql`

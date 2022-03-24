@@ -2,10 +2,10 @@ import React from "react";
 import {graphql} from "gatsby";
 import PropTypes from "prop-types";
 
-import PageLayout from "../layouts/PageLayout";
-import PageMetadata from "../components/PageMetadata";
-import Teaser from "../components/Teaser";
-import CTALink from "../components/CTALink";
+import PageLayout from "../patterns/layouts/PageLayout";
+import PageMetadata from "../patterns/components/PageMetadata";
+import Teaser from "../patterns/components/Teaser";
+import CTALink from "../patterns/components/CTALink";
 
 const IndexPage = ({data}) => {
   return (

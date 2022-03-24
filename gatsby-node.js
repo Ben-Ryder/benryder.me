@@ -97,7 +97,7 @@ exports.createPages = async ({ graphql, actions }) => {
   basicPageResults.data.allContentfulBasicPage.nodes.forEach((node) => {
     createPage({
       path: node.url,
-      component: path.resolve("./src/layouts/BasicPage.js"),
+      component: path.resolve("./src/patterns/layouts/BasicPage.js"),
       context: {
         pageID: node.id,
       },
@@ -121,7 +121,7 @@ exports.createPages = async ({ graphql, actions }) => {
   articlesResult.data.allContentfulArticle.nodes.forEach((node) => {
     createPage({
       path: node.fields.urlSlug,
-      component: path.resolve("./src/layouts/ArticlePage.js"),
+      component: path.resolve("./src/patterns/layouts/ArticlePage.js"),
       context: {
         articleID: node.id,
       },
@@ -142,7 +142,7 @@ exports.createPages = async ({ graphql, actions }) => {
   articleTagsResult.data.allContentfulArticle.group.forEach(tag => {
     createPage({
       path: "/blog/tags/" + tag.tagName,
-      component: path.resolve("./src/layouts/ArticleTagsPage.js"),
+      component: path.resolve("./src/patterns/layouts/ArticleTagsPage.js"),
       context: {
         tagName: tag.tagName,
       },
@@ -166,7 +166,7 @@ exports.createPages = async ({ graphql, actions }) => {
   projectPagesResult.data.allContentfulProject.nodes.forEach((node) => {
     createPage({
       path: node.fields.urlSlug,
-      component: path.resolve("./src/layouts/ProjectPage.js"),
+      component: path.resolve("./src/patterns/layouts/ProjectPage.js"),
       context: {
         projectID: node.id,
       },
@@ -187,7 +187,7 @@ exports.createPages = async ({ graphql, actions }) => {
   projectTagsResult.data.allContentfulProject.group.forEach(tag => {
     createPage({
       path: "/projects/tags/" + tag.tagName,
-      component: path.resolve("./src/layouts/ProjectTagsPage.js"),
+      component: path.resolve("./src/patterns/layouts/ProjectTagsPage.js"),
       context: {
         tagName: tag.tagName,
       },

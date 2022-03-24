@@ -1,9 +1,9 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import PageLayout from "../../layouts/PageLayout";
+import PageLayout from "../../patterns/layouts/PageLayout";
+import ProseContent from "../../patterns/components/ProseContent";
 
-import ProseContent from "../../components/ProseContent";
 
 const BlogTest = () => {
   return (

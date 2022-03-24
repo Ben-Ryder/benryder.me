@@ -4,11 +4,11 @@ import * as Yup from 'yup';
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import FormRow from "../components/forms/FormRow";
-import FormInput from "../components/forms/FormInput";
-import FormSubmitButton from "../components/forms/FormSubmitButton";
-import FormTextArea from "../components/forms/FormTextArea";
-import FormError from "../components/forms/FormError";
+import FormRow from "../elements/FormRow";
+import FormInput from "../elements/FormInput";
+import FormSubmitButton from "../elements/FormSubmitButton";
+import FormTextArea from "../elements/FormTextArea";
+import FormError from "../elements/FormError";
 
 const ContactForm = () => {
   const contactFormSchema = Yup.object().shape({

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
-import LinkComponent from "./elements/LinkComponent";
+import LinkComponent from "../elements/LinkComponent";
 
 const Teaser = (props) => {
   return (

@@ -1,10 +1,10 @@
 import React from "react";
 
-import PageLayout from "../layouts/PageLayout";
+import PageLayout from "../patterns/layouts/PageLayout";
 
-import ProseContent from "../components/ProseContent";
-import PageMetadata from "../components/PageMetadata";
-import LinkComponent from "../components/elements/LinkComponent";
+import ProseContent from "../patterns/components/ProseContent";
+import PageMetadata from "../patterns/components/PageMetadata";
+import LinkComponent from "../patterns/elements/LinkComponent";
 
 const PageNotFound = () => {
   return (

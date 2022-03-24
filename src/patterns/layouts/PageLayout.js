@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 
 // Region Components
-import Header from "../components/region/Header";
-import Footer from "../components/region/Footer";
+import Header from "../regions/Header";
+import Footer from "../regions/Footer";
 
 // Assets
-import SiteIcon from "../images/icon.png";
+import SiteIcon from "../../images/icon.png";
 
 const PageLayout = ({ children }) => {
   return (

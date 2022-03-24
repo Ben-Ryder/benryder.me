@@ -1,10 +1,10 @@
 import React from "react";
 
-import PageLayout from "../layouts/PageLayout";
-import PageMetadata from "../components/PageMetadata";
+import PageLayout from "../patterns/layouts/PageLayout";
+import PageMetadata from "../patterns/components/PageMetadata";
 
-import ContactForm from "../forms/ContactForm";
-import LinkComponent from "../components/elements/LinkComponent";
+import ContactForm from "../patterns/forms/ContactForm";
+import LinkComponent from "../patterns/elements/LinkComponent";
 
 const ContactPage = () => {
   return (
